@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("data pic.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav a:focus-visible {
+    outline: 2px solid yellow;
+    outline-offset: 2px;
+}
+
+nav a[aria-current="page"] {
+    color: yellow;
+    text-decoration: underline;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 1000px;
+    width: calc(100% - 80px);
+    border-radius: 10px;
+    color: white;
+}
+
+main a {
+    color: #8fc5ff;
+}
+
+main a:hover {
+    color: #b9dbff;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+h3 {
+    color: lightgray;
+}
+
+iframe,
+video {
+    display: block;
+    width: min(100%, 640px);
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-top: 15px;
+    border-radius: 8px;
+    border: 0;
+}
+
+.video-frame {
+    width: min(100%, 640px);
+}
+
+.video-frame iframe,
+.video-frame video {
+    width: 100%;
+}
+
+.video-note {
+    margin-top: 12px;
+    color: #d9d9d9;
+}
+
+img {
+    display: block;
+    width: min(100%, 520px);
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+input,
+textarea,
+button {
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+}
+
+input,
+textarea {
+    color: #111;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+button:focus-visible {
+    outline: 2px solid #8fc5ff;
+    outline-offset: 2px;
+}
+
+button {
+    background-color: #1f6feb;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1558bd;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 20px;
+        width: calc(100% - 40px);
+    }
+
+    iframe,
+    video {
+        width: 100%;
+    }
+
+    img {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
